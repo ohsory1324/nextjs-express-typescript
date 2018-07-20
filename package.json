@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node --compilerOptions '{\"module\":\"commonjs\"}' ./server/index.ts",
+    "build": "next build",
     "tslint": "tslint"
   },
   "devDependencies": {
