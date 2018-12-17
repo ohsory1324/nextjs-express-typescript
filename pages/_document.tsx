@@ -2,7 +2,11 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import * as React from 'react';
 import { ServerStyleSheet } from 'styled-components';
 
-export default class extends Document {
+interface IProps {
+  styleTags: React.ReactElement<{}>[];
+}
+
+export default class extends Document<IProps> {
   public static async getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
     const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));

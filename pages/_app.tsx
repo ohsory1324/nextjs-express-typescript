@@ -1,4 +1,5 @@
 import App, { Container } from 'next/app';
+import 'normalize.css';
 import { Fragment } from 'react';
 
 import Nav from '../components/Nav';

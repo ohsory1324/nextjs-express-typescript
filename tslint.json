@@ -10,6 +10,7 @@
     "no-submodule-imports": false,
     "variable-name": false,
     "jsx-no-multiline-js": false,
-    "jsx-no-lambda": false
+    "jsx-no-lambda": false,
+    "array-type": false
   }
 }
