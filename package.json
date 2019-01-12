@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node --compilerOptions '{\"module\":\"commonjs\"}' ./server/index.ts",
     "build": "next build && tsc --project tsconfig.server.json",
-    "tslint": "tslint"
+    "tslint": "tslint",
+    "start": "NODE_ENV=production node .next/production-server"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
